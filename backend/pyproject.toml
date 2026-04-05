@@ -1,0 +1,18 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Homey - AI-Powered Real Estate Marketplace API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.18.4",
+    "aiomysql>=0.2.0",
+    "cryptography>=44.0.0",
+    "fastapi[standard]>=0.135.3",
+    "numpy>=2.2.0",
+    "openai>=1.82.0",
+    "pydantic-settings>=2.9.0",
+    "python-dotenv>=1.2.2",
+    "sqlalchemy>=2.0.49",
+    "uvicorn>=0.43.0",
+]

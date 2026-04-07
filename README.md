@@ -7,7 +7,7 @@ A real estate listings platform that lets you search properties with plain-langu
 | Layer | Tech |
 |---|---|
 | Backend | Python, FastAPI, SQLAlchemy 2.0, Alembic, MySQL 8 |
-| AI | OpenAI (`gpt-4o-mini` + `text-embedding-3-small`) |
+| AI | OpenAI (`gpt-5.4` + `gpt-5.4-nano` + `text-embedding-3-small`) |
 | Frontend | React 19, Vite, Tailwind CSS, shadcn/ui, React Query |
 | Infra | Docker, Docker Compose |
 

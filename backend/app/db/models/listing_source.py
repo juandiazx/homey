@@ -3,7 +3,7 @@
 from datetime import datetime
 import uuid
 
-from sqlalchemy import DateTime, ForeignKey, String, UniqueConstraint, UUID, func
+from sqlalchemy import DateTime, ForeignKey, String, Text, UniqueConstraint, UUID, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.models import Base, Listing
 
@@ -32,5 +32,6 @@ class ListingSourceMetadata(Base):
     external_id: Mapped[str] = mapped_column(String(255))
     source_provider: Mapped[str] = mapped_column(String(255), default="habitaclia")
     source_url: Mapped[str] = mapped_column(String(1000))
+    raw_source_html: Mapped[str | None] = mapped_column(Text, nullable=True)
 
     listing: Mapped["Listing"] = relationship(back_populates="source_metadata")

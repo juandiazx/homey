@@ -63,6 +63,7 @@ async def _ingest(json_path: str) -> None:
                     external_id=item["external_id"],
                     source_provider="habitaclia",
                     source_url=item["_source_url"],
+                    raw_source_html=item.get("raw_source_html"),
                 )
                 db.add(source)
 
